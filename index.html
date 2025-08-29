@@ -18,14 +18,14 @@
             <h2 class="text-[#006747] font-bold text-xl  font-hind-madurai">Emergency <br>Service</h2>
         </div>
         <div class="gap-2 mt-4 ">
-            <button class="btn rounded-full text-lg bg-[#41ff6b1a]"> 0 <i class="fa-solid fa-heart text-red-600 text-xl"></i>
+            <button class="btn rounded-full text-lg bg-[#41ff6b1a]" id="heart-count"> 0 <i class="fa-solid fa-heart text-red-600 text-xl"></i>
             </button>
 
-            <button class="btn rounded-full bg-[#41ff6b1a]"> 100
+            <button class="btn rounded-full bg-[#41ff6b1a] id" id="coin"> 100
                 <img src="./assets/coin.png" alt="" class="w-6">
             </button>
   
-            <button class="btn px-8 bg-green-600 text-white rounded-full"><span>2</span>Copy</button>
+            <button class="btn px-8 bg-green-600 text-white rounded-full"><span id="copy-count">0</span>Copy</button>
         </div>
         </div>
     </header>
@@ -54,19 +54,19 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-1">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">National Emergency Number</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title1">National Emergency Number</h2>
                             <p class="font-roboto text-lg text-gray-500">National Emergency</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">999</p>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num1">999</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">All</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]  hover:bg-gray-200 transform transition" onclick="copyNumber('cart-num1')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call1" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -78,19 +78,19 @@
                             <img src="./assets/police.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-2">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">Police Helpline Number</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title2">Police Helpline Number</h2>
                             <p class="font-roboto text-lg text-gray-500">Police</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">999</p>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num2">999</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Police</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%] hover:bg-gray-200 transform transition" onclick="copyNumber('cart-num2')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call2" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -102,19 +102,19 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-3">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">Fire Service Number</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title3">Fire Service Number</h2>
                             <p class="font-roboto text-lg text-gray-500">Fire Service</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">999</p>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num3">999</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Fire</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%] hover:bg-gray-200 transform transition" onclick="copyNumber('cart-num3')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call3" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -126,19 +126,19 @@
                             <img src="./assets/ambulance.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-4">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">Ambulance Service</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title4">Ambulance Service</h2>
                             <p class="font-roboto text-lg text-gray-500">Ambulance</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">999</p>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num4">1994-999999</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Fire</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%] hover:bg-gray-200 transform transition" onclick="copyNumber('cart-num4')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call4" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -150,19 +150,19 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-5">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">Womens & Child Helpline</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title5">Womens & Child Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Womens & Child Helpline</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">109</p>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num5">109</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Help</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%] hover:bg-gray-200 transform transition" onclick="copyNumber('cart-num5')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call5" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -174,19 +174,19 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-6">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">Anti-Corruption Helpline</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title6">Anti-Corruption Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Anti-Corruption</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">106</p>
-                            <button class="btn rounded-full w-15 ml-[-2px] text-lg">Fire</button>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num6">106</p>
+                            <button class="btn rounded-full w-15 ml-[-2px] text-lg">Govt.</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%] hover:bg-gray-200 transform transition" onclick="copyNumber('cart-num6')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call6" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -198,19 +198,19 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-7">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">Electricity Helpline</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title7">Electricity Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Electricity Outage</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">16216</p>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num7">16216</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Electricity</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%] bg-gray-200 transform transition" onclick="copyNumber('cart-num7')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call7" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -222,19 +222,19 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-8">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">Brac Helpline</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title8">Brac Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Brac</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">916445</p>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num8">916445</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">NGO</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%] hover:bg-gray-200 transform transition" onclick="copyNumber('cart-num8')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call8" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -246,19 +246,19 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-9">
                             </figure>
                         </div>
                         <div class="">
-                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl">Bangladesh Railway Helpline</h2>
+                            <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title9">Bangladesh Railway Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Bangladesh Railway</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold">163</p>
+                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num9">163</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Travel</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
-                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%]"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
+                            <button class="btn btn-outline  w-[150px] border border-gray-400 rounded-xl lg:w-[100px] md:w-[50%] hover:bg-gray-200 transform transition" onclick="copyNumber('cart-num9')"><i class="fa-solid fa-copy"></i> <span class="text-gray-600">Copy</span></button>
 
-                            <button class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl"><i class="fa-solid fa-phone"></i> Call</button>
+                            <button id="cart-call9" class="btn btn-soft bg-green-600 text-center text-white w-[150px] lg:w-[100px] md:w-[50%] rounded-xl hover:bg-[#018732] transform transition"><i class="fa-solid fa-phone"></i> Call</button>
                         </div>
                         </div>
                     </div>
@@ -266,10 +266,11 @@
             </div>
             <!-- right side -->
             <aside class="col-span-12 md:col-span-12 lg:col-span-3 border border-green-500">
-            <div class="bg-white rounded  flex justify-between items-center flex-col sm:flex-row md:flex-row ">
-                <h2><i class="fa-regular fa-clock"></i> Call History</h2>
-                <button class="btn px-6 bg-green-600 text-white rounded-full text-center">Clear</button>
+            <div class="call-history bg-white rounded  flex justify-between items-center flex-col sm:flex-row md:flex-row" id="callHistory">
+                <h2 class="font-roboto text-lg font-medium"><i class="fa-regular fa-clock"></i> Call History</h2>
+                <button class="btn px-6 bg-green-600 text-white rounded-full text-center hover:bg-[#018732] transform transition" id="clearBtn">Clear</button>
             </div>
+            <div id="clearAll"></div>
           </aside>
           </section>
     </main>
