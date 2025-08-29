@@ -18,10 +18,10 @@
             <h2 class="text-[#006747] font-bold text-xl  font-hind-madurai">Emergency <br>Service</h2>
         </div>
         <div class="gap-2 mt-4 ">
-            <button class="btn rounded-full text-lg bg-[#41ff6b1a]" id="heart-count"> 0 <i class="fa-solid fa-heart text-red-600 text-xl"></i>
+            <button class="btn rounded-full text-lg bg-[#41ff6b1a]"> <span id="heart-count">0</span> <i class="fa-solid fa-heart text-red-600 text-xl"></i>
             </button>
 
-            <button class="btn rounded-full bg-[#41ff6b1a] id" id="coin"> 100
+            <button class="btn rounded-full bg-[#41ff6b1a]" > <span id="coin">100</span>
                 <img src="./assets/coin.png" alt="" class="w-6">
             </button>
   
@@ -42,7 +42,7 @@
          </div>
          </section>
          <!-- card section -->
-          <section class="mt-6 border border-red-500 min-h-[200px] w-11/12 mx-auto grid grid-cols-12 gap-8 ">
+          <section class="mt-6 min-h-[200px] w-11/12 mx-auto grid grid-cols-12 gap-8 ">
              <!-- left side -->
             <div class="col-span-12 md:col-span-12 lg:col-span-9">
                 <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -54,7 +54,7 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-1">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-1" onclick="heartNumber('heart-1')">
                             </figure>
                         </div>
                         <div class="">
@@ -78,13 +78,13 @@
                             <img src="./assets/police.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-2">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-2" onclick="heartNumber('heart-2')">
                             </figure>
                         </div>
                         <div class="">
                             <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title2">Police Helpline Number</h2>
                             <p class="font-roboto text-lg text-gray-500">Police</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num2">999</p>
+                            <p class="mt-3 font-roboto text-2xl font-bold" id="cart-num2">999</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Police</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
@@ -102,13 +102,13 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-3">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-3"  onclick="heartNumber('heart-3')">
                             </figure>
                         </div>
                         <div class="">
                             <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title3">Fire Service Number</h2>
                             <p class="font-roboto text-lg text-gray-500">Fire Service</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num3">999</p>
+                            <p class="mt-3 font-roboto text-2xl font-bold" id="cart-num3">999</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Fire</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
@@ -126,13 +126,13 @@
                             <img src="./assets/ambulance.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-4">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-4"  onclick="heartNumber('heart-4')">
                             </figure>
                         </div>
                         <div class="">
                             <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title4">Ambulance Service</h2>
                             <p class="font-roboto text-lg text-gray-500">Ambulance</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num4">1994-999999</p>
+                            <p class="mt-3 font-roboto text-2xl font-bold" id="cart-num4">1994-999999</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Fire</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
@@ -150,13 +150,13 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-5">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-5"  onclick="heartNumber('heart-5')">
                             </figure>
                         </div>
                         <div class="">
                             <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title5">Womens & Child Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Womens & Child Helpline</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num5">109</p>
+                            <p class="mt-3 font-roboto text-2xl font-bold" id="cart-num5">109</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Help</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
@@ -174,13 +174,13 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-6">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-6"  onclick="heartNumber('heart-6')">
                             </figure>
                         </div>
                         <div class="">
                             <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title6">Anti-Corruption Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Anti-Corruption</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num6">106</p>
+                            <p class="mt-3 font-roboto text-2xl font-bold" id="cart-num6">106</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Govt.</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
@@ -198,13 +198,13 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-7">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-7"  onclick="heartNumber('heart-7')">
                             </figure>
                         </div>
                         <div class="">
                             <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title7">Electricity Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Electricity Outage</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num7">16216</p>
+                            <p class="mt-3 font-roboto text-2xl font-bold" id="cart-num7">16216</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Electricity</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
@@ -222,13 +222,13 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-8">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-8"  onclick="heartNumber('heart-8')">
                             </figure>
                         </div>
                         <div class="">
                             <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title8">Brac Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Brac</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num8">916445</p>
+                            <p class="mt-3 font-roboto text-2xl font-bold" id="cart-num8">916445</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">NGO</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
@@ -246,13 +246,13 @@
                             <img src="./assets/emergency.png" alt="abc" class="w-5">
                             </figure>
                             <figure>
-                            <img src="./assets/heart.png" alt="xyz" class="w-6" id="heart-9">
+                            <img src="./assets/heart.png" alt="xyz" class="w-6 heart" id="heart-9"  onclick="heartNumber('heart-9')">
                             </figure>
                         </div>
                         <div class="">
                             <h2 class="font-hind-madurai font-bold text-2xl lg:text-xl" id="cart-title9">Bangladesh Railway Helpline</h2>
                             <p class="font-roboto text-lg text-gray-500">Bangladesh Railway</p>
-                            <p class="mt-3 font-roboto text-3xl font-bold" id="cart-num9">163</p>
+                            <p class="mt-3 font-roboto text-2xl font-bold" id="cart-num9">163</p>
                             <button class="btn rounded-full w-15 ml-[-2px] text-lg">Travel</button>
                         </div>
                         <div class="flex gap-4 mt-3 flex-row md:flex-row">
@@ -265,7 +265,7 @@
                 </div>
             </div>
             <!-- right side -->
-            <aside class="col-span-12 md:col-span-12 lg:col-span-3 border border-green-500">
+            <aside class="col-span-12 md:col-span-12 lg:col-span-3">
             <div class="call-history bg-white rounded  flex justify-between items-center flex-col sm:flex-row md:flex-row" id="callHistory">
                 <h2 class="font-roboto text-lg font-medium"><i class="fa-regular fa-clock"></i> Call History</h2>
                 <button class="btn px-6 bg-green-600 text-white rounded-full text-center hover:bg-[#018732] transform transition" id="clearBtn">Clear</button>
