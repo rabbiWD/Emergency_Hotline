@@ -54,7 +54,7 @@ for (let i = 1; i <= 9; i++) {
                 document.getElementById("coin").innerText = newCoin;
 
                 let entry = document.createElement("div");
-                entry.className = "bg-[#FAFAFA] w-[320px] mx-auto p-2 rounded-lg mt-4";
+                entry.className = "bg-[#FAFAFA] mx-auto p-2 rounded-lg mt-4";
 
                 entry.innerHTML = `
                 <div class="flex justify-between">
